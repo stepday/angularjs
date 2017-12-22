@@ -1,0 +1,27 @@
+
+.login-box {
+  width: 600px;
+  margin: 100px auto;
+}
+.row {
+  line-height: 45px;
+  height: 45px;
+}
+.row span {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.row .input {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    padding-left: 5px;
+}
+.row .btn-login {
+    margin-left: 250px;
+}
+.row p{ text-align: center;}

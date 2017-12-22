@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>登录</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/stepday.tools.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+
+<body ng-app="loginApp"  ng-controller="loginCtrl">
+    <div class="login-box">
+        <div class="row">
+            <span>用户名：</span>
+            <input class="input" type="text" ng-model="uname" autocomplete="false" placeholder="请输入用户名">
+        </div>
+        <div class="row">
+            <span>密码：</span>
+            <input class="input" type="password" ng-model="pwd" autocomplete="false" placeholder="请输入密码">
+        </div>
+        <div class="row">
+            <button class="btn btn-login" ng-click="login()"><i>登录</i></button>
+        </div>
+        <div class="row">
+            <p>没有账号? 可立即<a href="register.html">注册</a></p>
+        </div>
+    </div>
+    <!--可引入公用部分-->
+    <!-- <div ng-include="'footer.html'"></div> -->
+    <footer class="footer">All @copyright  2017</footer>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

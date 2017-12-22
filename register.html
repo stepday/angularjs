@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/stepday.tools.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+
+<body ng-app="regApp"  ng-controller="regCtrl">
+    <div class="login-box">
+        <div class="row">
+            <span>用户名：</span>
+            <input class="input" type="text" ng-model="uname" autocomplete="false" placeholder="请输入用户名">
+        </div>
+        <div class="row">
+            <span>密码：</span>
+            <input class="input" type="password" ng-model="pwd" autocomplete="false" placeholder="请输入密码">
+        </div>
+        <div class="row">
+            <span>确认密码：</span>
+            <input class="input" type="password" ng-model="repwd" autocomplete="false" placeholder="请再次输入密码">
+        </div>
+        <div class="row">
+            <button class="btn btn-login" ng-click="register()"><i>注册</i></button>
+        </div>
+        <div class="row">
+            <p>已有账号? 可立即<a href="login.html">登录</a></p>
+        </div>
+    </div>
+    <footer class="footer">All @copyright  2017</footer>
+    <script type="text/javascript" src="js/register.js"></script>
+</body>
+
+</html>

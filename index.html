@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/stepday.tools.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+</head>
+<body ng-app="indexApp" ng-controller="indexCtrl">
+	<h5>豆瓣电影评分前十大电影名单</h5>
+	<ul ng-hide="isHide">
+		<li ng-repeat="item in movies">
+			<img ng-src="{{item.images.small}}"/><a href="{{item.directors[0].alt}}" target="_blank">{{item.title}}</a><span>[{{item.year}}年]</span></li>
+	</ul>
+	<footer class="footer">All @copyright  2017</footer>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
