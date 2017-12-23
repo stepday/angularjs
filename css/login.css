@@ -25,3 +25,4 @@
     margin-left: 250px;
 }
 .row p{ text-align: center;}
+input.ng-empty{ background: red;}

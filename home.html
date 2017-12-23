@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>主页</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div ng-controller="homeCtrl">
+        <h5>豆瓣电影评分前十大电影名单</h5>
+        <ul ng-hide="isHide">
+            <li ng-repeat="item in movies">
+                <img ng-src="{{item.images.small}}" /><a href="{{item.directors[0].alt}}" target="_blank">{{item.title}}</a><span>[{{item.year}}年]</span></li>
+        </ul>
+    </div>
+    <!-- <div ng-controller="otherCtrl">
+        <h5>感人至深的催泪电影</h5>
+        <ul>
+            <li ng-repeat="movie in cuileimovies">{{movie}}</li>
+        </ul>
+    </div>
+    <h5>$rootScope内提取感人至深的催泪电影</h5>
+    <ul>
+        <li ng-repeat="movie in $root.cuileimovies">{{movie}}</li>
+    </ul> -->
+    <footer class="footer">All @copyright 2017</footer>
+</body>
+
+</html>
